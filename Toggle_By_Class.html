@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Color Toggle by class</title>
+    <style>
+        .red{
+            background: rgb(245, 8, 8);
+        }
+    </style>
+</head>
+<body>
+    <button>CLICK ME</button>
+    <script>
+        const button = document.querySelector('button');
+
+        button.addEventListener("click", function(){
+                document.body.classList.toggle("red");
+        });
+    </script>
+</body>
+</html>

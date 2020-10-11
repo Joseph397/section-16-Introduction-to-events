@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Events</title>
+</head>
+<body>
+    <button>Click Me</button>
+    <P>No One Has Clicked Me Yet</P>
+
+    <script>
+        const button = document.querySelector('button');
+        let paragraph = document.querySelector('p');
+        let clicked = false; // boolean
+
+        button.addEventListener("click", function(){
+            if(clicked){
+               paragraph.textContent = "No One Has Clicked Me Yet!"
+            clicked  = false; 
+            } else {
+                paragraph.textContent = "I have been clicked!"
+            clicked  = true; 
+            }
+            
+        });
+    </script>
+</body>
+</html>

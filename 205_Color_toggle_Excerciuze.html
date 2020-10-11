@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Toggle Exercise</title>
+</head>
+<body>
+    <button>CLICK ME</button>
+    <script>
+        // const button = document.querySelector('button');
+        // let body = document.querySelector('body');
+
+        // button.addEventListener("click", function(){
+        //    body.style.background = "purple";
+        // });
+        
+        const button = document.querySelector('button');
+        let isPurple = false; // boolean
+
+        // button.addEventListener("click", function(){
+        //     if(isPurple){
+        //         document.body.style.background = 'white';
+        //         isPurple = false;
+        //     } else {
+        //         document.body.style.background = "purple";
+        //         isPurple = true;
+        //     }
+        // });
+
+        
+        button.addEventListener("click", function(){
+            if(isPurple){
+                document.body.style.background = 'white';
+            } else {
+                document.body.style.background = "purple";
+            }
+            isPurple = !isPurple; // shorthand
+        });
+    </script>
+</body>
+</html>
